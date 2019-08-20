@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+Name class :<input id ="input">
+<button onclick="checkNameClass();">check</button>
+<output id="output"></output>
+<body>
+<script>
+
+function checkNameClass() {
+    let a = document.getElementById("input").value;
+    regexp = /^[CAP]{1}[0-9]{4}[GHIKLM]{1}$/;
+    document.getElementById("output").innerHTML =  regexp.test(a);
+}
+</script>
+</body>
+</html>
